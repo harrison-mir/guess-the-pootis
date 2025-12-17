@@ -1,0 +1,54 @@
+.character-editor {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--tf2-light-gray);
+  border-radius: 0;
+  background-color: var(--tf2-dark-gray);
+}
+
+.preview {
+  flex-shrink: 0;
+}
+
+.character {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--tf2-light-gray);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.character img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.selections {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.selections label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: var(--tf2-white);
+}
+
+.selections select {
+  margin-top: 5px;
+  padding: 5px;
+  border: 2px inset var(--tf2-light-gray);
+  border-radius: 0;
+  font-size: 16px;
+  background-color: var(--tf2-black);
+  color: var(--tf2-white);
+}
